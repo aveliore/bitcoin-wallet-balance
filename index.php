@@ -32,11 +32,11 @@
                 <script>
                     function getAddress() {
                         var input = document.getElementById("bwa").value;
-                        printBalance()
+                        printBalance(input)
                         alert(input);
                     }
 
-                    function printBalance() {
+                    function printBalance(input) {
                     fetch("https://blockchain.info/q/addressbalance/" + input)
                     .then(function(response) {
                         return response.json();
