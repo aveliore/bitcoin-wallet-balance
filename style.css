@@ -1,18 +1,21 @@
 body {
-    padding: 1em;
+    padding: 10px;
     background-color: #111b2c;
     font-family: 'Poppins', sans-serif;
 }
 
 main {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+a {
+    text-decoration: none;
+}
+
 .bwa {
-    width: 60vw;
     border: 2px solid #007FFF;
     background-color: #2b394a;
     color: white;
@@ -22,6 +25,19 @@ main {
     font-weight: 400;
     letter-spacing: 0.2rem;
     font-size: 0.6em;
+}
+
+@media only screen and (min-width: 600px) {
+    .bwa {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bwa {
+        width: 32em;
+        margin-top: 20px;
+    }
 }
 
 input:focus {
@@ -36,11 +52,10 @@ input::placeholder {
 
 .addressCheckButton {
     background-color: #007FFF;
-    border: 1px solid #007FFF;
-    width: 30%;
+    border: 2px solid #007FFF;
     border-radius: 10px;
     color: white;
-    padding: 1rem;
+    padding: 1rem 3rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -49,4 +64,42 @@ input::placeholder {
     cursor: pointer;
     font-weight: 700;
     letter-spacing: 0.05rem;
+}
+
+.addressCheckButton:hover {
+    border: 2px solid white;
+}
+
+.headerTitle {
+    text-align: center; 
+    font-size: 5vh; 
+    color: white;
+    font-weight: 700;
+    margin-top: 10%;
+}
+
+.headerSubtitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -2%;
+    color: #c3cfdc;
+}
+
+.logo {
+    color: white;
+    font-size: 14px;
+}
+
+footer {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footerLinks {
+    font-size: 12px;
+    color: #c3cfdc;
+    white-space: nowrap;
 }
