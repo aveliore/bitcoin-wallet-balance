@@ -29,12 +29,7 @@
         <main>
                 <input type="text" id="bwa" class="bwa" name="bwa" autofocus autocomplete="off" placeholder="Input Bitcoin wallet address here"> 
                 <center><input type="submit" class="addressCheckButton" type="submit" onclick="getBalance()" value="Check this wallet"></center>
-                <script>
-                        function getBalance() {
-                        var input = document.getElementById("bwa").value;
-                        alert(input);
-                    }
-                </script>
+                <script src="js/getbalance.js"></script>
                 <?php include 'php/balancechecker.php';?>
         </main>
         <footer>
