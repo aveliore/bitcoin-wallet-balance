@@ -27,6 +27,15 @@
             <p class="headerSubtitle">Input the address of a Bitcoin wallet into the field below and press Enter to check it's current balance. </p>
         </header>
         <main>
+                <script>
+                    var input = document.getElementById("bwa");
+                    input.addEventListener("keypress", function(event) {
+                    if (event.key === "Enter") {
+                    event.preventDefault();
+                    document.getElementById("addressCheckButton").click();
+                    }
+                    });
+                </script>
                 <input type="text" id="bwa" class="bwa" name="bwa" autofocus autocomplete="off" placeholder="Input Bitcoin wallet address here"> 
                 <center><input type="submit" id="addressCheckButton" class="addressCheckButton" type="submit" onclick="getBalance()" value="Check this wallet"></center>
                 <script>
