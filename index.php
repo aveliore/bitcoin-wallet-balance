@@ -27,8 +27,9 @@
             <p class="headerSubtitle">Input the address of a Bitcoin wallet into the field below and press Enter to check it's current balance. </p>
         </header>
         <main>
+                <script src="js/triggerEnter.js"></script>
                 <input type="text" id="bwa" class="bwa" name="bwa" autofocus autocomplete="off" placeholder="Input Bitcoin wallet address here"> 
-                <center><input type="submit" class="addressCheckButton" type="submit" onclick="getBalance()" value="Check this wallet"></center>
+                <center><input type="submit" id="addressCheckButton" class="addressCheckButton" type="submit" onclick="getBalance()" value="Check this wallet"></center>
                 <script src="js/getbalance.js"></script>
                 <?php include 'php/balancechecker.php';?>
         </main>
