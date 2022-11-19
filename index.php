@@ -27,23 +27,24 @@
             <p class="headerSubtitle">Input the address of a Bitcoin wallet into the field below and press Enter to check it's current balance. </p>
         </header>
         <main>
-                <script>
-                    var input = document.getElementById("bwa");
-                    input.addEventListener("keypress", function(event) {
-                    if (event.key === "Enter") {
-                    event.preventDefault();
-                    document.getElementById("addressCheckButton").click();
-                    }
-                    });
-                </script>
                 <input type="text" id="bwa" class="bwa" name="bwa" autofocus autocomplete="off" placeholder="Input Bitcoin wallet address here"> 
                 <center><input type="submit" id="addressCheckButton" class="addressCheckButton" type="submit" onclick="getBalance()" value="Check this wallet"></center>
                 <script>
                     function getBalance() {
-                    var input = document.getElementById("bwa").value;
-                    alert(input);
+                        var input = document.getElementById("bwa").value;
+                        alert(input);
                     }
+                    fetch("https://blockchain.info/q/addressbalance/" + input)
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(json) {
+                        var input = parseInt(json, 10);
+                        document.getElementById("btc-address").innerHTML = btcAddress;
+                        document.getElementById("btc-balance").innerHTML = btcBalance / 100000000;
+                    });
                 </script>
+                <p>The balance for <span id="btc-address"></span> is <span id="btc-balance"></span> BTC.</p>
                 <?php include 'php/balancechecker.php';?>
         </main>
         <footer>
