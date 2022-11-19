@@ -43,8 +43,8 @@
                         return response.json();
                     })
                     .then(function(json) {
-                        var input = parseInt(json, 10);
-                        document.getElementById("btc-address").innerHTML = btcAddress;
+                        var btcBalance = parseInt(json, 10);
+                        document.getElementById("btc-address").innerHTML = input;
                         document.getElementById("btc-balance").innerHTML = btcBalance / 100000000;
                     });
                     }
