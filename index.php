@@ -32,7 +32,7 @@
                 <script>
                     function getAddress() {
                         var input = document.getElementById("bwa").value;
-                        printBalance(input)
+                        printBalance()
                         alert(input);
                     }
 
