@@ -29,7 +29,7 @@
         <main>
                 <input type="text" id="bwa" class="bwa" name="bwa" autofocus autocomplete="off" placeholder="Input Bitcoin wallet address here"> 
                 <center><input type="button" class="addressCheckButton" value="Check this wallet"></center>
-                <?php include 'php/balancecheck.php';?>
+                <?php include 'php/balancechecker.php';?>
         </main>
         <footer>
             <p class="footerLinks">Popular BTC wallets list | How it works | Donate us &hearts;</p>
