@@ -104,7 +104,6 @@ footer {
     white-space: nowrap;
 }
 
-.readyBtcBalance {
+.btc-balance {
     text-align: center;
-    color: white;
 }
