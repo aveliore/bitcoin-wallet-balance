@@ -53,6 +53,7 @@ a:active {
     .bwa {
         width: 40em;
         margin-top: 20em;
+        max-width: 95vw;
     }
 }
 
