@@ -29,7 +29,7 @@
         <main>
                 <input type="text" id="bwa" class="bwa" name="bwa" autofocus autocomplete="off" placeholder="Input Bitcoin wallet address here"> 
                 <center><input type="submit" id="addressCheckButton" class="addressCheckButton" type="submit" onclick="getAddress()" value="Check this wallet"></center>
-                <center><p><span style="color: white;" id="btc-balance"></span> BTC.</p></center>
+                <center><p><span style="color: white;" id="readyBalance"></span></p></center>
                 <script>
                     function getAddress() {
                         var input = document.getElementById("bwa").value;
@@ -44,7 +44,7 @@
                     })
                     .then(function(json) {
                         var btcBalance = parseInt(json, 10);
-                        document.getElementById("btc-balance").innerHTML = "Current balance is: " + btcBalance / 100000000 + " BTC";
+                        document.getElementById("readyBalance").innerHTML = "Current balance is: " + btcBalance / 100000000 + " BTC";
                     });
                     }
                 </script>
