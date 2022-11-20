@@ -147,3 +147,19 @@ footer {
     margin-top: 4rem;
     font-weight: 400;
 }
+
+.headerTitleSubpage {
+    text-align: left; 
+    font-size: 5vh; 
+    color: white;
+    font-weight: 700;
+    line-height: 0.975;
+}
+
+.headerSubtitleSubpage {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c3cfdc;
+    margin-top: -2%;
+}
