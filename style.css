@@ -35,8 +35,8 @@ a {
 
 @media only screen and (max-width: 600px) {
     .bwa {
-        width: 32em;
-        margin-top: 10em;
+        width: 40em;
+        margin-top: 20em;
     }
 }
 
