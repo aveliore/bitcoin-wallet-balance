@@ -107,3 +107,7 @@ footer {
 .btc-balance {
     text-align: center;
 }
+
+#readyBalance {
+    margin-top: 20px;
+}
