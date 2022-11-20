@@ -41,6 +41,9 @@ a:active {
     font-weight: 400;
     letter-spacing: 0.2rem;
     font-size: 0.6em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 @media only screen and (min-width: 600px) {
@@ -81,6 +84,9 @@ input::placeholder {
     font-weight: 700;
     letter-spacing: 0.05rem;
     padding: 1rem 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .addressCheckButton:hover {
