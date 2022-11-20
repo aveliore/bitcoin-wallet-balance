@@ -29,25 +29,27 @@
         <main>
                 <input type="text" id="bwa" class="bwa" name="bwa" autofocus autocomplete="off" placeholder="Input Bitcoin wallet address here"> 
                 <center><input type="submit" id="addressCheckButton" class="addressCheckButton" type="submit" onclick="getAddress()" value="Check this wallet"></center>
-                <center><p><span style="color: white;" id="readyBalance"></span>&#8205;</p></center>
-                <script>
-                    function getAddress() {
-                        var input = document.getElementById("bwa").value;
-                        printBalance(input)
-                        alert(input);
-                    }
+                <div class="result">
+                    <center><p><span style="color: white;" id="readyBalance"></span>&#8205;</p></center>
+                    <script>
+                        function getAddress() {
+                            var input = document.getElementById("bwa").value;
+                            printBalance(input)
+                            alert(input);
+                        }
 
-                    function printBalance(input) {
-                    fetch("https://blockchain.info/q/addressbalance/" + input)
-                    .then(function(response) {
-                        return response.json();
-                    })
-                    .then(function(json) {
-                        var btcBalance = parseInt(json, 10);
-                        document.getElementById("readyBalance").innerHTML = "<span style='color: #c3cfdc;'> Current balance is: </span>" + btcBalance / 100000000 + " <span style='color: #c3cfdc;'>BTC</span>";
-                    });
-                    }
-                </script>
+                        function printBalance(input) {
+                        fetch("https://blockchain.info/q/addressbalance/" + input)
+                        .then(function(response) {
+                            return response.json();
+                        })
+                        .then(function(json) {
+                            var btcBalance = parseInt(json, 10);
+                            document.getElementById("readyBalance").innerHTML = "<span style='color: #c3cfdc;'> Current balance is: </span>" + btcBalance / 100000000 + " <span style='color: #c3cfdc;'>BTC</span>";
+                        });
+                        }
+                    </script>
+                </div>
         </main>
         <footer>
             <p class="footerLinks">Popular BTC wallets list | How it works | Donate us &hearts;</p>
