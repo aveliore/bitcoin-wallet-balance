@@ -75,8 +75,19 @@ input::placeholder {
     font-size: 5vh; 
     color: white;
     font-weight: 700;
-    margin-top: 10%;
     line-height: 0.95;
+}
+
+@media only screen and (min-width: 600px) {
+    .headerTitle {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .headerTitle {
+        margin-top: 20%;
+    }
 }
 
 .headerSubtitle {
