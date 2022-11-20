@@ -29,7 +29,7 @@
         <main>
                 <input type="text" id="bwa" class="bwa" name="bwa" autofocus autocomplete="off" placeholder="Input Bitcoin wallet address here"> 
                 <center><input type="submit" id="addressCheckButton" class="addressCheckButton" type="submit" onclick="getAddress()" value="Check this wallet"></center>
-                <p>The balance for <span id="btc-address"></span> is <span id="btc-balance"></span> BTC.</p>
+                <p><span id="btc-balance" class="readyBtcBalance"></span> BTC.</p>
                 <script>
                     function getAddress() {
                         var input = document.getElementById("bwa").value;

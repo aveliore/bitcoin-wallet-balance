@@ -103,3 +103,8 @@ footer {
     color: #c3cfdc;
     white-space: nowrap;
 }
+
+.readyBtcBalance {
+    text-align: center;
+    color: white;
+}
