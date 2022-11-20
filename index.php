@@ -44,7 +44,7 @@
                     })
                     .then(function(json) {
                         var btcBalance = parseInt(json, 10);
-                        document.getElementById("readyBalance").innerHTML = "Current balance is: " + btcBalance / 100000000 + " BTC";
+                        document.getElementById("readyBalance").innerHTML = "<span style='color: #c3cfdc;'> Current balance is: </span>" + btcBalance / 100000000 + " <span style='color: #c3cfdc;'>BTC</span>";
                     });
                     }
                 </script>
