@@ -95,18 +95,7 @@ input::placeholder {
     font-size: 18px;
     font-weight: 400;
     color: #c3cfdc;
-}
-
-@media only screen and (min-width: 600px) {
-    .headerTitle {
-        margin-top: -2%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .headerTitle {
-        margin-top: -4%;
-    }
+    margin-top: -3%;
 }
 
 .logo {
