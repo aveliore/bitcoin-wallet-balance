@@ -102,7 +102,7 @@ input::placeholder {
     font-size: 5vh; 
     color: white;
     font-weight: 700;
-    line-height: 0.95;
+    line-height: 0.975;
 }
 
 @media only screen and (min-width: 600px) {
@@ -122,7 +122,7 @@ input::placeholder {
     font-size: 18px;
     font-weight: 400;
     color: #c3cfdc;
-    margin-top: -3%;
+    margin-top: -2%;
 }
 
 .logo {
