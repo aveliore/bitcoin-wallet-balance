@@ -21,7 +21,7 @@ git pull https://github.com/aveliore/bitcoin-wallet-balance.git
 2. Click on ```index.html``` or run the website using Apache, NGINX or any other modern webserver software. 
 
 ## License 
-MIT (view the license) 
+MIT [(view the license)](https://github.com/aveliore/bitcoin-wallet-balance/blob/main/LICENSE.md) 
 
 ## Live version :globe_with_meridians:
 Live version is available here -> [bitcoinwalletbalance.com](https://bitcoinwalletbalance.com)
