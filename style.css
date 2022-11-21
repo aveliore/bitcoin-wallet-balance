@@ -167,7 +167,7 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
-    .headerTitleSubpage .headerSubtitleSubpage {
-        margin-left: 10%;
+    .headerTitleSubpage {
+        margin-left: 10vw;
     }
 }
