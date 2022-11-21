@@ -1,5 +1,5 @@
 function showDonationAddress() {
-    var x = document.getElementById("donationAddressTextDiv");
+    var x = document.getElementById("donationAddressText");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
