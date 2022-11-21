@@ -1,8 +1,3 @@
-function showDonationAddress() {
-    var x = document.getElementById("donationAddressText");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+function showDonationAddress(){
+    document.getElementById("donationAddressText").innerHTML = "bc1qsdy4js4w987vtujj4sm44n2jzxkc2ucuj07c8j";
+}
