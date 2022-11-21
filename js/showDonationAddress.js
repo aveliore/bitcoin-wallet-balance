@@ -1,2 +1,2 @@
-var element = document.getElementById("donationAddressText); 
+var element = document.getElementById("donationAddressText"); 
 element.innerHTML("New content"); 
