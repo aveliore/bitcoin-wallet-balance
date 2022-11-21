@@ -1,2 +1,2 @@
-var element = document.getElementById("donationAddressText"); 
-element.innerHTML("New content"); 
+var toggle = document.getElementById("donationAddressText"); 
+toggle.innerHTML("New content"); 
