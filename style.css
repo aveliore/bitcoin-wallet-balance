@@ -183,8 +183,7 @@ footer {
     color: #c3cfdc;
 }
 
-.showDonationAddressButton {
-    background-color: #111b2c;
-    border: none; 
-    color: #007FFF;
+#donationAddress {
+    font-size: 0.8em; 
+    color: #c3cfdc;
 }
