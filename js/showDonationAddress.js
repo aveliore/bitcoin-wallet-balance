@@ -3,6 +3,6 @@ function showDonationAddress() {
     if (x.innerHTML === "HERE") {
       x.innerHTML = "Swapped text!";
     } else {
-      x.innerHTML = "&#8205;";
+      x.innerHTML = "Swapped text!";
     }
   }
