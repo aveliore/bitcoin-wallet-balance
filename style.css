@@ -188,3 +188,15 @@ footer {
     font-size: 0.8em; 
     color: #c3cfdc;
 }
+
+.logoLink a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.logoLink a:hover{
+    text-decoration: none;
+    color: #007FFF;
+    font-size: 14px;
+}
