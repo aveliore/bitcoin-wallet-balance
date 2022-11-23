@@ -135,6 +135,7 @@ footer {
 }
 
 .footerLinks {
+    text-align: center;;
     font-size: 12px;
     color: #c3cfdc;
     white-space: nowrap;
